@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    font-family:'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+.container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 380px;
+     margin: 40px auto;
+     background-color: white; 
+     border-radius: 10px;
+    
+}
+.content{
+    text-align: center;
+    padding: 20px;
+}
+
+.illustration{
+    width: 380px;
+    border-radius: 10px 10px 0px 0px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    padding: 10px 12px;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+.change-link{
+    color: hsl(228, 45%, 44%);
+    font-weight: 600;
+    
+}
+.annual-inner{
+    padding-right: 4rem;
+}
+
+.btn{
+    background-color: var(--Bright-blue);
+    color: white;
+    font-weight: 700;
+    margin-top: 2rem;
+    border: none;
+    padding: 12px 12%;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow:0 5px 10px rgba(0 0 0/0.4);
+}
+.btn:hover{
+    background-color: rgb(56, 41, 224,0.8);
+}
+.cancel{
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: black;
+}
+
+@media (max-width:375px){
+
+    body{
+        background: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: var(--Pale-blue);
+    }
+    .illustration{
+        width: 100%;
+    }
+    .content{
+        font-size: 15px;
+    }
+    .content>p{
+        margin-top: 2rem;
+    }
+    .container{
+        width: 90%;
+
+    }
+    .flex{
+        width: 100%;
+        font-size: 13px;
+        margin:2rem auto;
+    }
+    .change-link{
+        margin-right: 1rem;
+    }
+    .btn{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+        
+    }
