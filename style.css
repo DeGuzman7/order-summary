@@ -16,7 +16,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 body{
     background: url(images/pattern-background-desktop.svg);
@@ -39,8 +38,13 @@ body{
     text-align: center;
     padding: 20px;
 }
+.content h1{
+    font-weight: 900;
+
+}
 .content>p{
     margin-top: 1rem;
+    color: var(--Desaturated-blue);
 }
 
 .illustration{
@@ -56,10 +60,16 @@ body{
     margin-top: 2rem;
     border-radius: 10px;
 }
+.price{
+    color: var(--Desaturated-blue);
+}
 .change-link{
     color: hsl(228, 45%, 44%);
     font-weight: 600;
     
+}
+.change-link:hover{
+    text-decoration: none;
 }
 .annual-inner{
     padding-right: 4rem;
@@ -68,7 +78,7 @@ body{
 .btn{
     background-color: var(--Bright-blue);
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 2rem;
     border: none;
     padding: 12px 12%;
@@ -85,7 +95,11 @@ body{
     font-weight: 700;
     text-align: center;
     margin-top: 1.5rem;
-    color: black;
+    color:var(--Desaturated-blue);
+    text-decoration: none;
+}
+.cancel:hover{
+    color: var(--Dark-blue);
 }
 
 @media (max-width:375px){
@@ -101,8 +115,12 @@ body{
     .content{
         font-size: 15px;
     }
+    .content h1{
+        font-weight: 600;
+        font-size: 25px;
+    }
     .content>p{
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     .container{
         width: 90%;
@@ -119,7 +137,8 @@ body{
     }
     .btn{
         width: 100%;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
+        font-size: 14px;
     }
     .annual-inner{
         margin-left: 0.6rem;
