@@ -40,6 +40,7 @@ body{
 }
 .content h1{
     font-weight: 900;
+    color: var(--Dark-blue);
 
 }
 .content>p{
@@ -73,6 +74,9 @@ body{
 }
 .annual-inner{
     padding-right: 4rem;
+}
+.annualtext{
+    color: var(--Dark-blue);
 }
 
 .btn{
